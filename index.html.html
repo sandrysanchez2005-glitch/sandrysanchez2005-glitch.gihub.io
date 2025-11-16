@@ -1,0 +1,631 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Unidad Educativa Jesús Martínez de Ezquerecocha</title>
+  <meta name="description" content="Página informativa de la Unidad Educativa Jesús Martínez de Ezquerecocha - Babahoyo, Los Ríos." />
+
+  <style>
+    /* Paleta: azul oscuro, blanco, verde */
+    :root{
+      --azul-oscuro: #06283D;
+      --verde: #2ECC71;
+      --blanco: #ffffff;
+      --gris-suave: #f4f6f8;
+      --maxwidth: 1000px;
+      font-family: Inter, system-ui, Arial, sans-serif;
+    }
+
+    *{box-sizing: border-box}
+    body{
+      margin:0;
+      background: var(--gris-suave);
+      color: #0b1b2b;
+      line-height:1.5;
+    }
+
+    header{
+      background: linear-gradient(90deg, var(--azul-oscuro), #083b66);
+      color: var(--blanco);
+      padding: 22px 16px;
+      position: sticky;
+      top:0;
+      z-index:100;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+    }
+    .wrap{
+      max-width: var(--maxwidth);
+      margin: 0 auto;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+    }
+    .logo{
+      display:flex;
+      align-items:center;
+      gap:12px;
+    }
+    .logo img{height:56px; width:auto; border-radius:8px; background:var(--blanco); padding:4px}
+    nav a{
+      color:var(--blanco);
+      text-decoration:none;
+      margin-left:12px;
+      font-weight:600;
+    }
+    nav a:hover{opacity:0.9; text-decoration:underline}
+
+    main{
+      max-width: var(--maxwidth);
+      margin: 24px auto;
+      padding: 0 16px 80px;
+    }
+
+    .hero{
+      background: var(--blanco);
+      border-radius:12px;
+      padding:28px;
+      box-shadow: 0 6px 20px rgba(3,12,22,0.06);
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:18px;
+      align-items:center;
+    }
+    .hero .titulo{
+      font-size:1.6rem;
+      color:var(--azul-oscuro);
+      font-weight:700;
+    }
+
+    .grid-2{
+      display:grid;
+      grid-template-columns: 1fr 320px;
+      gap:18px;
+      margin-top:18px;
+    }
+
+    section.card{
+      background:var(--blanco);
+      padding:18px;
+      border-radius:10px;
+      box-shadow: 0 4px 14px rgba(3,12,22,0.05);
+    }
+
+    h2{color:var(--azul-oscuro); margin-top:0}
+
+    table{
+      width:100%;
+      border-collapse:collapse;
+      margin-top:10px;
+      font-size:0.95rem;
+    }
+    table th, table td{
+      border:1px solid #d3d9dd;
+      padding:8px;
+      text-align:left;
+    }
+    table th{
+      background:#eef3f6;
+      font-weight:700;
+    }
+
+    @media (max-width:900px){
+      .grid-2{grid-template-columns: 1fr}
+    }
+
+    .btn-materia {
+        padding: 10px 15px;
+        margin: 5px;
+        border-radius: 8px;
+        background: #0a71c5;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    .btn-materia:hover {
+        background: #084f8a;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="logo">
+      <img src="logo.png" alt="Logo - Unidad Educativa Jesús Martínez">
+      <div>
+        <div style="font-weight:800">Unidad Educativa Jesús Martínez</div>
+        <div style="font-size:0.9rem; opacity:0.9">Ezquerecocha — Babahoyo, Los Ríos</div>
+      </div>
+    </div>
+
+    <nav aria-label="Navegación principal">
+      <a href="#inicio">Inicio</a>
+      <a href="#fundador">Fundador</a>
+      <a href="#historia">Historia</a>
+      <a href="#rector">Rector</a>
+      <a href="#materias">Materias</a>
+      <a href="#ubicacion">Ubicación</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section id="inicio" class="hero">
+    <div>
+      <div class="titulo">Bienvenidos a la Unidad Educativa Jesús Martínez de Ezquerecocha</div>
+      <p class="lead">Institución particular con niveles de Educación General Básica y Bachillerato, encargada de formar estudiantes con valores, disciplina y excelencia educativa.</p>
+    </div>
+  </section>
+
+  <!-- FUNDADOR -->
+  <section id="fundador" class="card" style="margin-top:18px">
+    <h2>Fundador</h2>
+    <p>
+        <strong>Jesús Ramón Martínez de Ezquerecocha Suso</strong> fue un destacado sacerdote y obispo católico,
+        recordado por su profundo compromiso con la educación, la labor social y el desarrollo espiritual en la
+        provincia de Los Ríos. Nació el <strong>31 de agosto de 1935</strong> en Junguitu, Álava (España), y fue 
+        ordenado sacerdote el <strong>9 de agosto de 1959</strong>. En 1963 llegó al Ecuador para iniciar una extensa 
+        trayectoria pastoral que lo llevaría a convertirse en una figura fundamental para la comunidad de Babahoyo.
+    </p>
+
+    <h3>Trayectoria eclesiástica y educativa</h3>
+    <p>
+        Entre 1980 y 1982 ejerció como <strong>Administrador Apostólico de la Diócesis de Machala</strong>.
+        Posteriormente, en 1984 fue designado <strong>prelado de Los Ríos</strong>, destacándose por impulsar obras 
+        sociales, educativas y de integración comunitaria. Con la elevación de la prelatura a diócesis en 1994, se 
+        convirtió en el <strong>primer Obispo de Babahoyo</strong>, labor que desempeñó hasta el 2008.
+    </p>
+
+    <p>
+        Durante su liderazgo pastoral, promovió la creación, fortalecimiento y acompañamiento de instituciones 
+        educativas en la provincia, fomentando la alfabetización, la formación integral y el acceso a la educación en 
+        sectores vulnerables. Su compromiso con el desarrollo humano lo convirtió en un referente de valores, 
+        disciplina, servicio y entrega.
+    </p>
+
+    <h3>Legado</h3>
+    <p>
+        En reconocimiento a su dedicación y a su invaluable aporte al desarrollo educativo de Los Ríos, la institución 
+        lleva su nombre: <strong>Unidad Educativa Jesús Martínez de Ezquerecocha</strong>. Su figura representa 
+        el compromiso con la educación, el progreso social y la promoción de valores que aún hoy inspiran a toda la 
+        comunidad educativa.
+    </p>
+
+    <p>
+        Tras renunciar a su cargo en 2008 por motivos de salud, regresó a España, donde continuó colaborando en labores
+        pastorales hasta su fallecimiento el <strong>16 de febrero de 2013</strong> en Vitoria-Gasteiz.
+    </p>
+
+    <p><em>Su legado perdura como símbolo de servicio, vocación y amor por la educación.</em></p>
+  </section>
+
+  <!-- HISTORIA -->
+  <section id="historia" class="card" style="margin-top:18px">
+    <h2>Historia</h2>
+    <p>
+        La Unidad Educativa Jesús Martínez de Ezquerecocha fue fundada en honor al obispo Jesús Ramón Martínez de Ezquerecocha Suso,
+        quien dedicó su vida a la educación y el desarrollo comunitario en la provincia de Los Ríos. La institución inició sus actividades
+        en la década de 1990, con el objetivo de proporcionar una educación integral basada en valores cristianos, disciplina y excelencia académica.
+    </p>
+    <p>
+        A lo largo de los años, la escuela ha crecido y se ha adaptado a las necesidades educativas modernas, incorporando nuevas tecnologías,
+        programas de formación técnica y vínculos con universidades locales. Hoy en día, ofrece niveles de Educación General Básica y Bachillerato,
+        formando a generaciones de estudiantes comprometidos con su comunidad.
+    </p>
+    <p>
+        La institución ha sido reconocida por su aporte al desarrollo educativo de Babahoyo, promoviendo la inclusión, la innovación pedagógica
+        y el fortalecimiento de la identidad cultural local.
+    </p>
+  </section>
+
+  <!-- RECTOR -->
+  <section id="rector" class="card" style="margin-top:18px">
+    <h2>Rector</h2>
+    <header style="display:flex;gap:20px;align-items:center;flex-wrap:wrap;">
+      <div style="flex:0 0 180px;height:180px;border-radius:10px;overflow:hidden;background:#e9eef3;">
+        <!-- Reemplaza por la foto oficial del rector -->
+        <img src="foto-rector.jpg" alt="Rector Msc. Rigail Marcial Rojas" style="width:100%;height:100%;object-fit:cover;">
+      </div>
+
+      <div style="flex:1;">
+        <h1 style="margin:0;font-size:30px;color:#0b315e;">
+          Msc. Rigail Marcial Rojas
+        </h1>
+        <p style="margin:5px 0 10px 0;color:#6b7280;">
+          Rector de la Unidad Educativa Jesús Martínez de Ezquerecocha — Babahoyo, Los Ríos
+        </p>
+
+        <span style="display:inline-block;background:#dff3ea;color:#0b6e4f;padding:6px 12px;border-radius:20px;font-weight:bold;font-size:14px;">
+          Rector Actual
+        </span>
+      </div>
+    </header>
+
+    <p style="line-height:1.6;color:#333;">
+      <strong>Msc. Rigail Marcial Rojas</strong> es el rector actual de la Unidad Educativa 
+      <strong>Jesús Martínez de Ezquerecocha</strong>, institución emblemática de Babahoyo dedicada 
+      a la formación integral de niños y jóvenes de la provincia de Los Ríos. 
+      Con una sólida formación académica respaldada por un título de <strong>Máster (MSc)</strong>, 
+      ha orientado su gestión hacia el fortalecimiento pedagógico, la calidad educativa y la proyección 
+      cultural y comunitaria de la escuela.
+    </p>
+
+    <p style="line-height:1.6;color:#333;">
+      Su trayectoria dentro del sistema educativo se caracteriza por un profundo compromiso con la excelencia 
+      y la responsabilidad institucional. Desde que asumió la rectoría, ha impulsado la modernización de los 
+      procesos administrativos, la mejora de la infraestructura organizativa y el fortalecimiento del trabajo 
+      docente. Su gestión se basa en principios de disciplina, transparencia, trabajo en equipo y 
+      acompañamiento constante a estudiantes y familias.
+    </p>
+
+    <p style="line-height:1.6;color:#333;">
+      Bajo su liderazgo, la institución ha logrado consolidar una estructura de trabajo más ordenada y eficiente, 
+      optimizando la planificación del año lectivo, supervisando el cumplimiento de los objetivos académicos y 
+      fomentando un ambiente escolar seguro y orientado a los valores. Además, ha promovido la participación 
+      activa de los padres de familia mediante reuniones, comunicados y espacios de diálogo que fortalecen la 
+      relación entre la comunidad y la institución.
+    </p>
+
+    <p style="line-height:1.6;color:#333;">
+      Uno de los aportes más significativos de su administración ha sido la apertura de la escuela hacia la 
+      comunidad académica y universitaria. Ha impulsado activamente la <strong>vinculación con la Universidad Técnica 
+      de Babahoyo (UTB)</strong>, permitiendo que estudiantes universitarios desarrollen proyectos de investigación, 
+      trabajos de grado, prácticas preprofesionales y actividades formativas dentro de la institución. 
+      Esto ha situado a la Unidad Educativa Jesús Martínez de Ezquerecocha en un papel de relevancia dentro del 
+      ámbito académico local, integrando nuevos enfoques pedagógicos y promoviendo un ambiente de innovación.
+    </p>
+
+    <p style="line-height:1.6;color:#333;">
+      Su participación en espacios culturales también ha sido notable. El rector ha intervenido en actividades como 
+      presentaciones de obras literarias, lanzamientos editoriales y colaboraciones con la Casa de la Cultura, 
+      contribuyendo al fortalecimiento del entorno artístico y académico de la provincia. Estas acciones han 
+      impulsado la imagen de la institución como un espacio que no solo educa, sino que también promueve la 
+      cultura, el conocimiento y la identidad local.
+    </p>
+
+    <p style="line-height:1.6;color:#333;">
+      Su labor ha sido reconocida en medios locales y redes institucionales, donde se destacan su compromiso, 
+      liderazgo y cercanía con la comunidad educativa. Se caracteriza por ser un rector accesible, responsable y 
+      enfocado en proporcionar una educación integral, moderna y centrada en el bienestar y el desarrollo de los 
+      estudiantes.
+    </p>
+
+    <p style="line-height:1.6;color:#333;">
+      Gracias a su dedicación, la Unidad Educativa Jesús Martínez de Ezquerecocha continúa avanzando con paso firme 
+      hacia una educación más completa, participativa y alineada con las necesidades actuales. Su visión combina 
+      experiencia, formación profesional, disciplina institucional y una genuina vocación por el servicio educativo, 
+      convirtiéndolo en una figura clave dentro del desarrollo académico y cultural de Babahoyo.
+    </p>
+  </section>
+
+  
+
+    <!-- MENÚ DE MATERIAS -->
+    
+<section id="materias" style="margin-top: 25px;">
+    <h2 style="font-size: 32px; margin-bottom: 10px;">Oferta Académica</h2>
+
+    <!-- BOTÓN PRINCIPAL -->
+    <button onclick="mostrarMenu()" 
+            style="padding: 12px 20px; font-size: 18px; cursor: pointer; border-radius: 10px; background:#0055aa; color:white; border:none;">
+        Materias
+    </button>
+
+    <!-- MENÚ DE MATERIAS -->
+    <div id="menuMaterias" style="display:none; margin-top:20px;">
+        <button class="btn-materia" onclick="mostrarInfo('adminFin')">Administración Financiera</button>
+        <button class="btn-materia" onclick="mostrarInfo('agrotec')">Agrotecnología</button>
+        <button class="btn-materia" onclick="mostrarInfo('biologia')">Biología</button>
+        <button class="btn-materia" onclick="mostrarInfo('arte')">Arte</button>
+        <button class="btn-materia" onclick="mostrarInfo('ciencias')">Ciencias Naturales</button>
+        <button class="btn-materia" onclick="mostrarInfo('contabilidad')">Contabilidad</button>
+        <button class="btn-materia" onclick="mostrarInfo('cableado')">Cableado Estructurado</button>
+        <button class="btn-materia" onclick="mostrarInfo('bgu')">Bachillerato General Unificado</button>
+    </div>
+
+    <!-- SECCIÓN PARA MOSTRAR INFORMACIÓN -->
+    <div id="infoMateria" style="margin-top: 30px; padding: 20px; border-radius: 10px; background: #f8f8f8; display:none;"></div>
+</section>
+
+<style>
+    .btn-materia {
+        padding: 10px 15px;
+        margin: 5px;
+        border-radius: 8px;
+        background: #0a71c5;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    .btn-materia:hover {
+        background: #084f8a;
+    }
+</style>
+
+<script>
+function mostrarMenu() {
+    const menu = document.getElementById("menuMaterias");
+    menu.style.display = menu.style.display === "none" ? "block" : "none";
+}
+
+function mostrarInfo(materia) {
+    const info = document.getElementById("infoMateria");
+    info.style.display = "block";
+
+    // CONTENIDO DE CADA MATERIA
+    const datos = {
+        adminFin: `
+            <h3>Administración Financiera</h3>
+            <p>Asignatura enfocada en la gestión del dinero y los recursos dentro de una empresa o proyecto.</p>
+            <h4>Subtemas</h4>
+            <ul>
+                <li>Presupuestos</li>
+                <li>Estados financieros</li>
+                <li>Inversiones</li>
+                <li>Gestión de riesgos</li>
+            </ul>
+            <h4>Contenido por parciales</h4>
+            <p><strong>Primer parcial:</strong> Conceptos financieros, flujo de caja.</p>
+            <p><strong>Segundo parcial:</strong> Análisis financiero, toma de decisiones.</p>
+            <p><strong>Tercer parcial:</strong> Proyectos de inversión y financiamiento.</p>
+        `,
+
+        agrotec: `
+            <h3>Agrotecnología</h3>
+            <p>Mantiene relación con la producción agrícola mediante tecnología moderna.</p>
+            <h4>Subtemas</h4>
+            <ul>
+                <li>Uso de maquinaria agrícola</li>
+                <li>Manejo de suelo</li>
+                <li>Técnicas de cultivo</li>
+                <li>Riego y fertilización</li>
+            </ul>
+            <h4>Contenido por parciales</h4>
+            <p><strong>Primer parcial:</strong> Introducción al agro y su impacto.</p>
+            <p><strong>Segundo parcial:</strong> Sistemas de riego y fertilizantes.</p>
+            <p><strong>Tercer parcial:</strong> Producción y cosecha.</p>
+        `,
+
+        biologia: `
+            <h3>Biología</h3>
+            <p>Estudia los seres vivos, su funcionamiento y su relación con el entorno.</p>
+            <h4>Subtemas</h4>
+            <ul>
+                <li>Células y tejidos</li>
+                <li>Genética</li>
+                <li>Botánica y zoología</li>
+                <li>Ecosistemas</li>
+            </ul>
+            <h4>Contenido por parciales</h4>
+            <p><strong>Primer parcial:</strong> Células, ADN, herencia.</p>
+            <p><strong>Segundo parcial:</strong> Organismos y fisiología humana.</p>
+            <p><strong>Tercer parcial:</strong> Ecología y ambiente.</p>
+        `,
+
+        arte: `
+            <h3>Arte</h3>
+            <p>Desarrolla la creatividad y expresión artística mediante diferentes técnicas.</p>
+            <h4>Subtemas</h4>
+            <ul>
+                <li>Dibujo</li>
+                <li>Pintura</li>
+                <li>Historia del arte</li>
+                <li>Diseño básico</li>
+            </ul>
+            <h4>Contenido por parciales</h4>
+            <p><strong>Primer parcial:</strong> Técnicas de dibujo.</p>
+            <p><strong>Segundo parcial:</strong> Pintura y color.</p>
+            <p><strong>Tercer parcial:</strong> Proyecto artístico final.</p>
+        `,
+
+        ciencias: `
+            <h3>Ciencias Naturales</h3>
+            <p>Introduce conceptos de física, química y biología aplicados al entorno.</p>
+            <h4>Subtemas</h4>
+            <ul>
+                <li>Materia</li>
+                <li>Energía</li>
+                <li>Reacciones químicas</li>
+                <li>Fuerzas y movimiento</li>
+            </ul>
+            <h4>Contenido por parciales</h4>
+            <p><strong>Primer parcial:</strong> Materia y mezclas.</p>
+            <p><strong>Segundo parcial:</strong> Reacciones químicas.</p>
+            <p><strong>Tercer parcial:</strong> Física básica.</p>
+        `,
+
+        contabilidad: `
+            <h3>Contabilidad</h3>
+            <p>Estudia el registro y control del patrimonio de una entidad.</p>
+            <h4>Subtemas</h4>
+            <ul>
+                <li>Activos, pasivos y patrimonio</li>
+                <li>Libro diario</li>
+                <li>Balance general</li>
+                <li>Estados de resultados</li>
+            </ul>
+            <h4>Contenido por parciales</h4>
+            <p><strong>Primer parcial:</strong> Conceptos básicos y cuentas.</p>
+            <p><strong>Segundo parcial:</strong> Libros contables.</p>
+            <p><strong>Tercer parcial:</strong> Estados financieros.</p>
+        `,
+
+        cableado: `
+            <h3>Cableado Estructurado</h3>
+            <p>Estudia las redes físicas de comunicación y su instalación técnica.</p>
+            <h4>Subtemas</h4>
+            <ul>
+                <li>Normativas de cableado</li>
+                <li>Crimpado de cables</li>
+                <li>Topologías de red</li>
+                <li>Rack y patch panel</li>
+            </ul>
+            <h4>Contenido por parciales</h4>
+            <p><strong>Primer parcial:</strong> Tipos de cables y herramientas.</p>
+            <p><strong>Segundo parcial:</strong> Instalación y medición.</p>
+            <p><strong>Tercer parcial:</strong> Montaje de redes completas.</p>
+        `,
+
+        bgu: `
+            <h3>Bachillerato General Unificado (BGU)</h3>
+            <p>Formación integral que abarca todas las áreas del conocimiento.</p>
+            <h4>Subtemas</h4>
+            <ul>
+                <li>Ciencias</li>
+                <li>Letras</li>
+                <li>Matemática</li>
+                <li>Proyectos interdisciplinarios</li>
+            </ul>
+            <h4>Contenido por parciales</h4>
+            <p><strong>Primer parcial:</strong> Bases conceptuales.</p>
+            <p><strong>Segundo parcial:</strong> Proyectos específicos.</p>
+            <p><strong>Tercer parcial:</strong> Aplicación práctica y evaluación global.</p>
+        `
+    };
+
+    info.innerHTML = datos[materia];
+}
+</script>
+
+
+    <!-- SECCIÓN PARA MOSTRAR INFORMACIÓN -->
+    <div id="infoMateria" style="margin-top: 30px; padding: 20px; border-radius: 10px; background: #f8f8f8; display:none;"></div>
+  </section>
+
+  <!-- UBICACIÓN -->
+  <section id="ubicacion" class="card" style="margin-top:18px">
+    <h2>Ubicación</h2>
+    <p>
+        La Unidad Educativa Jesús Martínez de Ezquerecocha se encuentra ubicada en Babahoyo, provincia de Los Ríos, Ecuador.
+        Dirección exacta: [Inserta dirección completa aquí, por ejemplo: Calle Principal, Ezquerecocha, Babahoyo].
+    </p>
+    <p>
+        Para llegar, puedes usar transporte público o privado. La institución está cerca de [referencias locales, como mercados o iglesias].
+    </p>
+    <!-- Aquí puedes insertar un mapa embebido de Google Maps si tienes la API -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.123456789012!2d-79.543210!3d-1.987654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMcKwNTgnNTMuNCJTIDc5wrAzMic0My4zIlc!5e0!3m2!1ses!2sec!4v1234567890123!5m2!1ses!2sec" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <p>Coordenadas aproximadas: Latitud -1.987654, Longitud -79.543210 (ajusta con datos reales).</p>
+  </section>
+
+
+  <!-- ===========================
+     6. VALORES INSTITUCIONALES
+     =========================== -->
+<section id="valores" class="card">
+  <h2>Valores Institucionales</h2>
+
+  <h3>Misión</h3>
+  <p>
+    Brindar una educación integral y de calidad que forme estudiantes capaces de desarrollarse académica,
+    social y emocionalmente, fomentando valores, disciplina y responsabilidad, con el fin de contribuir
+    positivamente a la comunidad de Babahoyo y al país.
+  </p>
+
+  <h3>Visión</h3>
+  <p>
+    Ser una unidad educativa reconocida por su excelencia académica, innovación pedagógica y formación en
+    valores, consolidándose como una institución líder en la Zona 5 y un referente de calidad en Los Ríos.
+  </p>
+
+  <h3>Valores Institucionales</h3>
+  <ul>
+    <li><strong>Responsabilidad:</strong> Cumplir con deberes escolares y personales con compromiso y disciplina.</li>
+    <li><strong>Respeto:</strong> Reconocer y valorar a cada miembro de la comunidad educativa.</li>
+    <li><strong>Honestidad:</strong> Actuar siempre con transparencia y verdad.</li>
+    <li><strong>Solidaridad:</strong> Apoyar a quienes lo necesitan y trabajar juntos como comunidad.</li>
+    <li><strong>Puntualidad:</strong> Valorar el tiempo propio y el de los demás.</li>
+    <li><strong>Disciplina:</strong> Mantener un comportamiento adecuado dentro y fuera de la institución.</li>
+  </ul>
+
+  <h3>Objetivos Institucionales</h3>
+  <ul>
+    <li>Garantizar una formación académica sólida en todas las áreas del conocimiento.</li>
+    <li>Promover el pensamiento crítico y el aprendizaje significativo.</li>
+    <li>Impulsar el desarrollo de habilidades tecnológicas, artísticas y deportivas.</li>
+    <li>Fomentar la convivencia pacífica y el respeto mutuo.</li>
+    <li>Preparar a los estudiantes para continuar estudios superiores o incorporarse al ámbito laboral.</li>
+  </ul>
+</section>
+
+<!-- ===========================
+     7. INSTALACIONES
+     =========================== -->
+<section id="instalaciones" class="card">
+  <h2>Instalaciones</h2>
+
+  <h3>Laboratorios</h3>
+  <p>
+    Espacios equipados para prácticas de ciencias naturales, química, física y biología,
+    donde los estudiantes realizan experimentos que fortalecen su formación científica.
+  </p>
+
+  <h3>Biblioteca</h3>
+  <p>
+    Área para lectura y estudio, con material bibliográfico actualizado y recursos de consulta
+    para todos los niveles educativos.
+  </p>
+
+  <h3>Áreas Deportivas</h3>
+  <p>
+    Cancha múltiple y zonas recreativas donde los estudiantes realizan actividades físicas, 
+    torneos y eventos institucionales.
+  </p>
+
+  <h3>Salas de Cómputo</h3>
+  <p>
+    Aulas equipadas con computadoras, herramientas TIC y tecnología moderna que apoya el
+    aprendizaje digital y los proyectos de investigación.
+  </p>
+
+  <h3>Huertos y Áreas de Agrotecnología</h3>
+  <p>
+    Espacios donde los estudiantes realizan prácticas agrícolas, siembras y actividades relacionadas
+    con la producción y el cuidado de plantas.
+  </p>
+
+  <h3>Aulas Especializadas</h3>
+  <ul>
+    <li>Inglés</li>
+    <li>Música</li>
+    <li>Emprendimiento</li>
+    <li>Ciencias Sociales</li>
+    <li>Matemática</li>
+  </ul>
+
+  <h3>Áreas Administrativas</h3>
+  <p>
+    Oficinas de Rectorado, Vicerrectorado, Secretaría, DECE y Coordinación Académica, donde se gestionan
+    los procesos y servicios institucionales.
+  </p>
+</section>
+
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="card" style="margin-top:18px">
+    <h2>Contacto</h2>
+    <p>Más información en las redes oficiales de la institución:</p>
+
+    <ul>
+      <li>
+        <a href="https://www.facebook.com/UEPJME/?locale=es_LA" target="_blank">
+          Facebook Oficial
+        </a>
+      </li>
+
+      <li>
+        <a href="https://www.instagram.com/ue_jesusmartinezdeezquerecocha" target="_blank">
+          Instagram Oficial
+        </a>
+      </li>
+
+      
+
+ 
